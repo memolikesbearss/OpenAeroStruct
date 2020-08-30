@@ -12,6 +12,7 @@ addons:
     - ubuntu-toolchain-r-test
     packages:
     - gfortran
+    - libopenmpi-dev
     - openmpi-bin
 
 before_install:
