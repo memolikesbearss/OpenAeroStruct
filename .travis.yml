@@ -58,5 +58,5 @@ script:
 
 after_success:
 - travis-sphinx deploy;
-- cd ../..;
+- cd ../;
 - coveralls;
