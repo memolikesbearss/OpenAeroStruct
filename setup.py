@@ -14,6 +14,7 @@ setup(name='openaerostruct',
     license='BSD-3',
     packages=[
         'openaerostruct',
+        'openaerostruct/docs',
         'openaerostruct/geometry',
         'openaerostruct/structures',
         'openaerostruct/aerodynamics',

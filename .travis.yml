@@ -49,6 +49,7 @@ install:
 - pip install --user travis-sphinx;
 
 script:
+- cd openaerostruct
 - testflo -n 2 openaerostruct --coverage --coverpkg openaerostruct --cover-omit \*tests/\* --cover-omit \*docs/\*;
 - cd openaerostruct/docs;
 - travis-sphinx build --source=.;
