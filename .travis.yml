@@ -59,4 +59,4 @@ script:
 after_success:
 - travis-sphinx deploy;
 - cd ../;
-- coveralls;
+- coveralls --rcfile=../.coveragerc;

@@ -2,6 +2,5 @@
 omit =
     openaerostruct/utils/plot_wing.py
     openaerostruct/utils/plot_wingbox.py
-    openaerostruct/geometry/ffd_component.py
 exclude_lines =
     pragma: no cover
