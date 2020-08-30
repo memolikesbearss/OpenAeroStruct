@@ -12,9 +12,6 @@ addons:
     - ubuntu-toolchain-r-test
     packages:
     - gfortran
-    - libblas-dev
-    - liblapack-dev
-    - libopenmpi-dev
     - openmpi-bin
 
 before_install:
@@ -49,8 +46,12 @@ install:
 - pip install --user travis-sphinx;
 
 script:
+# prevent OpenMPI warning messages
+- export OMPI_MCA_btl=^openib
+# run tests
 - cd openaerostruct
 - testflo -n 2 openaerostruct --coverage --coverpkg openaerostruct --cover-omit \*tests/\* --cover-omit \*docs/\*;
+# make docs
 - cd docs;
 - travis-sphinx build --source=.;
 
