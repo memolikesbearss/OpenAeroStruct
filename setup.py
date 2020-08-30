@@ -15,6 +15,7 @@ setup(name='openaerostruct',
     packages=[
         'openaerostruct',
         'openaerostruct/docs',
+        'openaerostruct/docs/_utils',
         'openaerostruct/geometry',
         'openaerostruct/structures',
         'openaerostruct/aerodynamics',
@@ -26,7 +27,6 @@ setup(name='openaerostruct',
     ],
     # Test files
     package_data={
-        'openaerostruct.docs': ['*.py', '_utils/*.py'],
         'openaerostruct': ['tests/*.py', '*/tests/*.py', '*/*/tests/*.py']
     },
     # TODO: add versions?
